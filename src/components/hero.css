@@ -1,0 +1,44 @@
+.hero {
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+.hero-intro {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  max-width: 560px;
+}
+
+.hero-image {
+  height: 600px;
+  background-color: blue;
+  max-width: 600px;
+  margin-right: -1.6rem;
+  margin-left: -1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-intro {
+    text-align: left;
+    order: 1;
+  }
+
+  .hero-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 400px;
+    width: 600px;
+  }
+
+  .hero .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .hero-intro {
+    padding-left: 3rem;
+  }
+}

@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 3rem 0;
+}
+
+.navigation {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  left: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .logo {
+    margin-right: 200px;
+  }
+
+  .nav-menu-item:nth-child(2) {
+    margin-right: 50px;
+  }
+
+  .header {
+    justify-content: left;
+  }
+}
