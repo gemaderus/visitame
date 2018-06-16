@@ -4,10 +4,27 @@
   align-items: center;
   position: relative;
   padding: 3rem 0;
+  /* transition: background-color 0.4s ease; */
+}
+
+.header.is-open {
+  background-color: green;
+}
+
+.header.is-open .navigation {
+  display: block;
 }
 
 .navigation {
   display: none;
+  position: absolute;
+  top: 78px;
+  left: 0;
+  right: 0;
+  background-color: green;
+  z-index: 20;
+  height: 100vh;
+  transition: opacity 0.4s ease;
 }
 
 .hamburger {
@@ -15,13 +32,28 @@
   left: 1.6rem;
 }
 
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: #ddd;
+  display: block;
+  transform: rotate(0deg);
+}
+
+.line:first-child {
+  margin-bottom: 3px;
+} 
+
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
   }
 
   .navigation {
+    position: initial;
     display: flex;
+    height: auto;
+    background-color: transparent;
   }
 
   .nav-menu {

@@ -7,10 +7,20 @@ import Footer from './components/Footer'
 import './Common.css'
 
 class App extends Component {
+  state = {
+    open: false
+  }
+
+  toggleMenu = () => {
+    const { open } = this.state
+    this.setState({
+      open: !open
+    })
+  }
   render() {
     return (
       <div>
-        <Header />
+        <Header isOpen={this.state.open} toggleMenu={this.toggleMenu} />
         <Hero />
         <Info className="reverse" />
         <Info />

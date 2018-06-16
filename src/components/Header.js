@@ -3,10 +3,16 @@ import './header.css'
 
 class Header extends Component {
   render() {
+    const { toggleMenu, isOpen } = this.props
+    const css = 'header container'
+
     return (
-      <header className="header container">
-        <div className="hamburger">
-          <button>Hamburger</button>
+      <header className={isOpen ? `${css} is-open` : css}>
+        <div>
+          <button className="hamburger btn" onClick={e => toggleMenu()}>
+            <span className="line" />
+            <span className="line" />
+          </button>
         </div>
         <div className="logo">
           <a href="">Logo</a>
