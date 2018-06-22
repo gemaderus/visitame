@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './demo.css'
 
 class Demo extends Component {
@@ -10,7 +11,9 @@ class Demo extends Component {
           <p>Sin ataduras. Sin datos de pago. 100% gratuito</p>
         </div>
         <div>
-          <a href="#">Prueba la demo</a>
+          <Link className="btn btn-main" to="/demo">
+            Prueba la demo
+          </Link>
         </div>
       </div>
     )

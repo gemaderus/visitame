@@ -19,15 +19,20 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero .btn-main {
+    margin-right: 3rem;
+  }
+  
   .hero-intro {
     text-align: left;
     order: 1;
   }
 
   .hero-image {
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    top: 0;
+    top: 0; */
+    margin: 0;
     height: 400px;
     width: 600px;
   }

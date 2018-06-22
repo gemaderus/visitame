@@ -31,7 +31,7 @@ class Footer extends Component {
             </nav>
             <nav>
               <h3 className="footer-title">Sigue la pista</h3>
-              <ul className="footer-list flex">
+              <ul className="footer-list">
                 <li className="footer-item">
                   <a href="#">Twitter</a>
                 </li>

@@ -1,0 +1,20 @@
+.module-title {
+  display: flex;
+  align-items: center;
+}
+
+.rounded {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .module-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .rounded {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}

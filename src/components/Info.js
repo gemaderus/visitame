@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './info.css'
 
 class Info extends Component {
@@ -11,7 +12,7 @@ class Info extends Component {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae adipisci modi suscipit animi, ad esse
             unde ipsa labore, tenetur libero amet laborum in commodi! Dolorem magnam similique modi repudiandae vero.
           </p>
-          <a href="#">Descubre como funciona</a>
+          <Link to="/demo">Descubre como funciona</Link>
         </div>
         <div className="info-image" />
       </div>

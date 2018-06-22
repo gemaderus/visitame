@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Info from './components/Info'
-import Demo from './components/Demo'
-import Footer from './components/Footer'
 import './Common.css'
+import Home from './Views/Home'
+import Work from './Views/Work'
+import NotMatch from './Views/NotMatch'
+import Demo from './Views/Demo'
+import Clients from './Views/Clients'
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 class App extends Component {
   state = {
@@ -19,14 +21,19 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
-        <Header isOpen={this.state.open} toggleMenu={this.toggleMenu} />
-        <Hero />
-        <Info className="reverse" />
-        <Info />
-        <Demo />
-        <Footer />
-      </div>
+      <Router>
+        <Switch>
+          <Route
+            path="/"
+            exact
+            render={props => <Home {...props} open={this.state.open} toggleMenu={this.toggleMenu} />}
+          />
+          <Route path="/como-funciona" component={Work} />
+          <Route path="/demo" component={Demo} />
+          <Route path="/nuestros-clientes" component={Clients} />
+          <Route component={NotMatch} />
+        </Switch>
+      </Router>
     )
   }
 }
