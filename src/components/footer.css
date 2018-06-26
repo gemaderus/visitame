@@ -43,6 +43,7 @@
   .footer-copy {
     margin-right: 14rem;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .footer-navigations nav {

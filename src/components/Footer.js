@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './footer.css'
 
 class Footer extends Component {
@@ -11,10 +12,10 @@ class Footer extends Component {
               <h3 className="footer-title">Descubre</h3>
               <ul className="footer-list">
                 <li className="footer-item">
-                  <a href="#">Como funciona</a>
+                  <Link to="/como-funciona">Como funciona</Link>
                 </li>
                 <li className="footer-item">
-                  <a href="#">Nuestros clientes</a>
+                  <Link to="/nuestros-clientes">Nuestros clientes</Link>
                 </li>
               </ul>
             </nav>
@@ -22,10 +23,10 @@ class Footer extends Component {
               <h3 className="footer-title">Info</h3>
               <ul className="footer-list">
                 <li className="footer-item">
-                  <a href="#">Prueba la demo</a>
+                  <Link to="/demo">Prueba la demo</Link>
                 </li>
                 <li className="footer-item">
-                  <a href="#">Contacta</a>
+                  <a>Contacta</a>
                 </li>
               </ul>
             </nav>
